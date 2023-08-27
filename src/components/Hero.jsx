@@ -22,8 +22,11 @@ const Hero = () => {
       </h1>
       <h2 className="desc">
         Make reading easier with ShrinkRay, a free text summarization tool that
-        reduces long articles to short, straightforward summaries.
+        reduces long articles to short, straightforward summaries*.
       </h2>
+      <h3 className="mt-5 text-sm text-gray-600 w-[40%] text-center">
+        *Note: This is an experimental feature. It may not summarize all articles accurately. Works best on mainstream news/docs websites.
+      </h3>
     </header>
   );
 };
