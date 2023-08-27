@@ -11,6 +11,8 @@ const Demo = () => {
 
   const [allArticles, setAllArticles] = useState([]);
 
+  const [copied, setCopied] = useState(false);
+
   const [getSummary, { error, isFetching }] = useLazyGetSummaryQuery();
 
   useEffect(() => {
@@ -40,6 +42,12 @@ const Demo = () => {
 
       console.log(newArticle);
     }
+  };
+
+  const handleCopy = (copyUrl) => {
+    setCopied(copyUrl);
+    navigator.clipboard.writeText(copyUrl);
+    setTimeout(() => setCopied(false), 3000);
   };
 
   return (
@@ -77,15 +85,15 @@ const Demo = () => {
 
         {/* Browse URL History */}
         <div className="flex flex-col gap-1 max-h-60 overflow-y-auto">
-          {allArticles.map((article, index) => (
+          {allArticles.map((item, index) => (
             <div
               key={`link-${index}`}
               onClick={() => setArticle(article)}
               className="link_card"
             >
-              <div className="copy_btn">
+              <div className="copy_btn" onClick={() => handleCopy(item.url)}>
                 <img
-                  src={copy}
+                  src={copied === item.url ? tick : copy}
                   alt="copy_icon"
                   className="w-[40%] h-[40%] object-contain "
                 />

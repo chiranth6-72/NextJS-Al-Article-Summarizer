@@ -18,7 +18,7 @@ const Hero = () => {
       <h1 className="head_text">
         Create concise summaries of articles with Sumz using the power of{" "}
         <br className="max-md:hidden" />
-        <span className="orange_gradient">OpenAI GPT-4</span>
+        <span className="hover:animate-pulse animate-none orange_gradient">OpenAI GPT-4</span>
       </h1>
       <h2 className="desc">
         Make reading easier with Summize, a free text summarization tool that
