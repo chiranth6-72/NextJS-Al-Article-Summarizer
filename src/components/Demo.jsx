@@ -88,7 +88,7 @@ const Demo = () => {
           {allArticles.map((item, index) => (
             <div
               key={`link-${index}`}
-              onClick={() => setArticle(article)}
+              onClick={() => setArticle(item)}
               className="link_card"
             >
               <div className="copy_btn" onClick={() => handleCopy(item.url)}>
