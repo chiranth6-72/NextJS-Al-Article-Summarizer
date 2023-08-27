@@ -21,7 +21,7 @@ const Hero = () => {
         <span className="hover:animate-pulse animate-none orange_gradient">OpenAI GPT-4</span>
       </h1>
       <h2 className="desc">
-        Make reading easier with Summize, a free text summarization tool that
+        Make reading easier with ShrinkRay, a free text summarization tool that
         reduces long articles to short, straightforward summaries.
       </h2>
     </header>
