@@ -44,8 +44,8 @@ npm install
    ```
 
 3. Run the app in development mode:
-    ```bash
-    npm run dev
+  ```bash
+  npm run dev
    ```
 
 Feel free to copy and paste this content into a `.md` file for your project description.
