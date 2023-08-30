@@ -32,9 +32,20 @@
 ## Getting Started ✅
 Get started with the app by cloning the repo and installing dependencies:
 
+1. Clone the repository:
 ```bash
 git clone <repo-url>
 npm install
 ```
 
-Just replace `<repo-url>` with the actual URL of this repository.
+2. Navigate to the root directory and install dependencies:
+  ```bash
+  npm install
+   ```
+
+3. Run the app in development mode:
+    ```bash
+    npm run dev
+   ```
+
+Feel free to copy and paste this content into a `.md` file for your project description.
